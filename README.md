@@ -144,23 +144,7 @@ As frameworks improve and use cases evolve, understanding how to build, train, a
 🌐 [GitHub Pages](https://JenLaur.github.io/ai-agents-guide/)
 
 
-## 🌐 Social Preview
 
-```html
-<!-- Open Graph Meta Tags -->
-<meta property="og:title" content="Understanding AI Agents" />
-<meta property="og:description" content="A visual guide to building, training, and evaluating agentic AI systems using LLMs, tools, and memory." />
-<meta property="og:image" content="https://yourdomain.com/og-thumbnail-1200x630.png" />
-<meta property="og:url" content="https://yourdomain.com/ai-agents-guide" />
-<meta property="og:type" content="article" />
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Understanding AI Agents" />
-<meta name="twitter:description" content="Explore how AI agents think, act, and learn through modular design, training, and feedback loops. With original visuals." />
-<meta name="twitter:image" content="https://yourdomain.com/og-thumbnail-1200x675.png" />
-```
----
 
 🧠 Created by Jennifer L. Sentiff  
 🛠️ Powered by GPT-4 + Custom Visuals
