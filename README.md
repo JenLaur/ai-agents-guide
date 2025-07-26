@@ -1,11 +1,15 @@
 # 🧠 Understanding AI Agents  
+
 ### A Deep Dive into Their Design, Training, and Monitoring
+
 ![title-graphic](article-title-graphic.png)
+
 ## 🚀 Introduction
 
 Artificial Intelligence (AI) agents are revolutionizing how we interact with software. Unlike traditional models or chatbots, AI agents are autonomous entities designed to perceive, reason, act, and learn over time.
 
 This article provides a detailed breakdown of:
+
 - What AI agents are
 - How they are constructed
 - How they are trained (or orchestrated)
@@ -18,6 +22,7 @@ This article provides a detailed breakdown of:
 ## 🤖 What is an AI Agent?
 
 An **AI agent** is a system that operates autonomously within a given environment by:
+
 1. Perceiving the environment (input)
 2. Reasoning over the perceived data
 3. Acting on the environment (output)
@@ -26,6 +31,7 @@ An **AI agent** is a system that operates autonomously within a given environmen
 ![agent-loop](01_agent-loop.png)
 
 **Key Characteristics:**
+
 - **Autonomy**: Executes tasks independently
 - **Proactivity**: Sets and follows goals
 - **Memory**: Stores knowledge of past interactions
@@ -33,6 +39,7 @@ An **AI agent** is a system that operates autonomously within a given environmen
 - **Adaptability**: Learns from failures and successes
 
 **Example Agents:**
+
 - 🧑‍💼 Personal productivity agents (Notion AI, Rewind)
 - 🔍 Research assistants (AutoGPT, Devin)
 - 📊 Business automation bots (Zapier + AI, Salesforce agents)
@@ -41,28 +48,34 @@ An **AI agent** is a system that operates autonomously within a given environmen
 
 ## 🧱 Core Components of an AI Agent
 
-![agent-architecture](02_agent-architecture.png)
+<img src="02_agent-architecture.png" alt="agent-architecture" width="300" height="200">
 
 ### 1. **Perception Module**
+
 Processes external inputs such as:
+
 - Natural language (via LLMs)
 - API outputs
 - Sensor data
 
 ### 2. **Reasoning and Planning**
+
 - Chain-of-thought prompting
 - Task decomposition (e.g., via ReAct or Toolformer strategies)
 - Decision-making using logic or learned priors
 
 ### 3. **Action Module**
+
 - Invokes tools or APIs (e.g., web search, file upload, data pipelines)
 - Executes scripts or modifies memory/state
 
 ### 4. **Memory System**
+
 - Short-term: dialogue history, task buffers
 - Long-term: vector stores (FAISS, ChromaDB), key-value storage
 
 ### 5. **Feedback Loop**
+
 - Monitors success/failure
 - Logs task metrics and triggers learning or adjustment
 - May use Reinforcement Learning, heuristics, or human-in-the-loop corrections
@@ -72,18 +85,22 @@ Processes external inputs such as:
 ## 🛠️ How Are AI Agents Built?
 
 ### 🧪 Frameworks
+
 Popular orchestration libraries:
+
 - **LangChain**: Tool use, memory, chains, agents
 - **AutoGen**: Multi-agent dialog coordination
 - **CrewAI / MetaGPT**: Role-based task management
 
 ### 🔧 Tools and APIs
+
 - **Search**: SerpAPI, Tavily
 - **Web interaction**: Puppeteer, browser toolkits
 - **File processing**: Unstructured.io, LlamaParse
 - **APIs**: Zapier, Stripe, Twilio, Notion
 
 ### 🧵 Prompt Strategies
+
 - **ReAct**: Reason + Act interleaving steps
 - **Toolformer**: Predicts when to call tools dynamically
 - **Self-reflection loops**: Agents critique and revise their actions
@@ -110,24 +127,26 @@ Unlike end-to-end deep learning models, agents are built with modular, often pre
 
 Evaluation is critical in open-ended environments.
 
-### Key Metrics:
+### Key Metrics
+
 - **Task completion rate**
 - **Execution time / latency**
 - **Tool usage efficiency**
 - **Hallucination / error rate**
 - **User feedback (NPS, scores)**
 
-### Tools:
+### Tools
+
 - **LangSmith**: Traces, spans, memory visualizations
 - **AgentOps**: Agent state monitoring, failover tracking
 - **Weights & Biases**: Logs, model comparisons, dashboards
 - **TensorBoard**: Model performance, metrics, and visualizations
 
-#### Sample Dashboard:
+#### Sample Dashboard
+
 ![agent-eval-dash](05_agent_eval_dashboard.png)
 
 ---
-
 
 ## 🔮 Future Directions
 
