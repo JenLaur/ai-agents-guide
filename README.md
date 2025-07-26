@@ -29,7 +29,7 @@ An **AI agent** is a system that operates autonomously within a given environmen
 3. Acting on the environment (output)
 4. Learning from its actions
 
-<img src="01_agent-loop.png" alt="agent-loop" width="600" height="800">
+<img src="01_agent-loop.png" alt="agent-loop" width="500" height="800">
 
 
 **Key Characteristics:**
