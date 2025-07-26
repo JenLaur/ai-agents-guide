@@ -171,5 +171,4 @@ As frameworks improve and use cases evolve, understanding how to build, train, a
 ---
 
 🌐 [GitHub Pages](https://JenLaur.github.io/ai-agents-guide/)  
-📖 [Web Version](Understanding_AI_Agents.html)
 🧠 Created by Jennifer L. Sentiff
