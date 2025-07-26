@@ -1,9 +1,6 @@
 # 🧠 Understanding AI Agents  
 ### A Deep Dive into Their Design, Training, and Monitoring
 
-# ai-agents-guide
-A visual guide to building and tracking AI agents
-
 ## 🚀 Introduction
 
 Artificial Intelligence (AI) agents are revolutionizing how we interact with software. Unlike traditional models or chatbots, AI agents are autonomous entities designed to perceive, reason, act, and learn over time.
