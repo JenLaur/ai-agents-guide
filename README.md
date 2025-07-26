@@ -140,8 +140,8 @@ As frameworks improve and use cases evolve, understanding how to build, train, a
 
 📄 For a visual version of this guide, visit:  
 📘 [Substack](https://your-substack-url.com)  
-✍️ [Medium](https://your-medium-url.com) 
-🌐 GitHub Pages: https://JenLaur.github.io/ai-agents-guide/
+✍️ [Medium](https://your-medium-url.com)   
+🌐 [GitHub Pages](https://JenLaur.github.io/ai-agents-guide/)
 
 
 ## 🌐 Social Preview
