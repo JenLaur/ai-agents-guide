@@ -1,6 +1,6 @@
 # 🧠 Understanding AI Agents  
 ### A Deep Dive into Their Design, Training, and Monitoring
-
+![title-graphic](article-title-graphic.png)
 ## 🚀 Introduction
 
 Artificial Intelligence (AI) agents are revolutionizing how we interact with software. Unlike traditional models or chatbots, AI agents are autonomous entities designed to perceive, reason, act, and learn over time.
@@ -23,6 +23,8 @@ An **AI agent** is a system that operates autonomously within a given environmen
 3. Acting on the environment (output)
 4. Learning from its actions
 
+![agent-loop](01_agent-loop.png)
+
 **Key Characteristics:**
 - **Autonomy**: Executes tasks independently
 - **Proactivity**: Sets and follows goals
@@ -38,6 +40,8 @@ An **AI agent** is a system that operates autonomously within a given environmen
 ---
 
 ## 🧱 Core Components of an AI Agent
+
+![agent-architecture](02_agent-architecture.png)
 
 ### 1. **Perception Module**
 Processes external inputs such as:
@@ -84,6 +88,8 @@ Popular orchestration libraries:
 - **Toolformer**: Predicts when to call tools dynamically
 - **Self-reflection loops**: Agents critique and revise their actions
 
+![agent-prompt-tool](03_prompt-and-tool-use.png)
+
 ---
 
 ## 🎓 Training vs Orchestration
@@ -115,8 +121,13 @@ Evaluation is critical in open-ended environments.
 - **LangSmith**: Traces, spans, memory visualizations
 - **AgentOps**: Agent state monitoring, failover tracking
 - **Weights & Biases**: Logs, model comparisons, dashboards
+- **TensorBoard**: Model performance, metrics, and visualizations
+
+#### Sample Dashboard:
+![agent-eval-dash](05_agent_eval_dashboard.png)
 
 ---
+
 
 ## 🔮 Future Directions
 
@@ -138,13 +149,5 @@ As frameworks improve and use cases evolve, understanding how to build, train, a
 
 ---
 
-📄 For a visual version of this guide, visit:  
-📘 [Substack](https://your-substack-url.com)  
-✍️ [Medium](https://your-medium-url.com)   
-🌐 [GitHub Pages](https://JenLaur.github.io/ai-agents-guide/)
-
-
-
-
-🧠 Created by Jennifer L. Sentiff  
-🛠️ Powered by GPT-4 + Custom Visuals
+🌐 [GitHub Pages](https://JenLaur.github.io/ai-agents-guide/)  
+🧠 Created by Jennifer L. Sentiff
