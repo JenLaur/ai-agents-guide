@@ -2,7 +2,8 @@
 
 ### A Deep Dive into Their Design, Training, and Monitoring
 
-![title-graphic](article-title-graphic.png)
+<img src="article-title-graphic.png" alt="title-graphic" width="600" height="800">
+
 
 ## 🚀 Introduction
 
@@ -28,7 +29,8 @@ An **AI agent** is a system that operates autonomously within a given environmen
 3. Acting on the environment (output)
 4. Learning from its actions
 
-![agent-loop](01_agent-loop.png)
+<img src="01_agent-loop.png" alt="agent-loop" width="600" height="800">
+
 
 **Key Characteristics:**
 
@@ -48,7 +50,7 @@ An **AI agent** is a system that operates autonomously within a given environmen
 
 ## 🧱 Core Components of an AI Agent
 
-<img src="02_agent-architecture.png" alt="agent-architecture" width="300" height="200">
+<img src="02_agent-architecture.png" alt="agent-architecture" width="500" height="800">
 
 ### 1. **Perception Module**
 
@@ -105,7 +107,7 @@ Popular orchestration libraries:
 - **Toolformer**: Predicts when to call tools dynamically
 - **Self-reflection loops**: Agents critique and revise their actions
 
-![agent-prompt-tool](03_prompt-and-tool-use.png)
+<img src="03_prompt-and-tool-use.png" alt="agent-prompt-tool" width="500" height="800">
 
 ---
 
@@ -144,7 +146,7 @@ Evaluation is critical in open-ended environments.
 
 #### Sample Dashboard
 
-![agent-eval-dash](05_agent_eval_dashboard.png)
+<img src="05_agent_eval_dashboard.png" alt="agent-eval-dash" width="500" height="800">
 
 ---
 
