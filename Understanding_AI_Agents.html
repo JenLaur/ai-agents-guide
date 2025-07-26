@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Understanding AI Agents</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #ffffff;
+    }
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    a {
+      color: #42a5f5;
+    }
+    code {
+      background: #1c1c1c;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Understanding AI Agents</h1>
+<h2>A Deep Dive into Their Design, Training, and Monitoring</h2>
+
+<p>AI agents aren’t just chatbots—they’re modular, intelligent systems that observe, plan, act, and learn. In this guide, we explore how they work, how they’re built, and how we track them using modern tools.</p>
+
+<h3>🚀 Introduction</h3>
+<p>Artificial Intelligence (AI) agents are autonomous systems designed to function in dynamic environments. Unlike static models, agents can pursue goals, call tools, access memory, and adapt based on feedback.</p>
+
+<h3>🤖 What Is an AI Agent?</h3>
+<p>AI agents perceive their environment, reason about goals, take actions using tools, and learn from outcomes. Think of them as software agents with a brain, hands, and a memory.</p>
+
+<img src="og-thumbnail-1200x630.png" alt="Agent Loop Flowchart">
+
+<h3>🧱 Core Components of an AI Agent</h3>
+<ul>
+  <li><strong>Perception:</strong> Ingests input from users or APIs</li>
+  <li><strong>Reasoning:</strong> Plans tasks using LLMs or scripts</li>
+  <li><strong>Action:</strong> Calls tools, executes code, or performs web search</li>
+  <li><strong>Memory:</strong> Stores short/long-term context</li>
+  <li><strong>Feedback:</strong> Tracks results and guides improvement</li>
+</ul>
+
+<img src="01_agent-loop.png" alt="Agent Components">
+
+<h3>🛠️ Building AI Agents</h3>
+<p>Agents are orchestrated using frameworks like LangChain, AutoGen, or CrewAI. They connect reasoning with action, using prompt engineering, RAG pipelines, and tool APIs.</p>
+
+<img src="02_agent-architecture.png" alt="Modular Architecture">
+
+<h3>🔧 Prompting & Tool Use</h3>
+<p>Agents often use ReAct loops (reason + act) or Toolformer-style tool usage. Tools are called dynamically based on what the model needs to complete a task.</p>
+
+<img src="03_prompt-and-tool-use.png" alt="Prompt and Tool Use Flow">
+
+<h3>🎓 Training vs. Orchestration</h3>
+<p>Most agents aren’t trained end-to-end. They use pre-trained models and wrap them with logic and tools.</p>
+
+<img src="A_2D_digital_graphic_in_a_table_format_presents_"T.png" alt="Training vs Orchestration Table">
+
+<h3>📊 Monitoring and Evaluation</h3>
+<p>Agents are monitored using tools like LangSmith or Weights & Biases. Metrics include task success rate, latency, tool use efficiency, and user satisfaction.</p>
+
+<img src="05_agent_eval_dashboard.png" alt="Agent Evaluation Dashboard">
+
+<h3>🔮 Future of AI Agents</h3>
+<ul>
+  <li>Swarm agents that collaborate</li>
+  <li>Persistent memory systems</li>
+  <li>On-device agents for privacy</li>
+  <li>Agent marketplaces and plug-and-play workflows</li>
+</ul>
+
+<hr>
+<p><strong>Ready to explore more?</strong></p>
+<ul>
+  <li>🌐 <a href="https://JenLaur.github.io/ai-agents-guide/">GitHub Pages</a></li>
+</ul>
+
+</body>
+</html>
