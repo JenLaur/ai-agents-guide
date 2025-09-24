@@ -1,50 +1,52 @@
-# 🧠 Understanding AI Agents  
+
+
+# 🧠 Understanding AI Agents
 
 ### A Deep Dive into Their Design, Training, and Monitoring
 
 <img src="article-title-graphic.png" alt="title-graphic" width="600" height="800">
 
+---
 
 ## 🚀 Introduction
 
-Artificial Intelligence (AI) agents are revolutionizing how we interact with software. Unlike traditional models or chatbots, AI agents are autonomous entities designed to perceive, reason, act, and learn over time.
+Artificial Intelligence (AI) agents are transforming how we interact with technology. Unlike traditional chatbots or static models, AI agents are **autonomous systems** that can perceive, reason, act, and adapt over time.
 
-This article provides a detailed breakdown of:
+This guide explores:
 
-- What AI agents are
-- How they are constructed
-- How they are trained (or orchestrated)
-- How to monitor and evaluate their performance
-- What tools and frameworks are commonly used
-- Future directions in agentic AI
+* What AI agents are
+* Core components and architecture
+* How they are built and orchestrated
+* Prompting strategies that shape their reasoning
+* How to monitor and evaluate their performance
+* Tools, frameworks, and future directions
 
 ---
 
 ## 🤖 What is an AI Agent?
 
-An **AI agent** is a system that operates autonomously within a given environment by:
+An **AI agent** is a system that operates autonomously within an environment by:
 
-1. Perceiving the environment (input)
-2. Reasoning over the perceived data
-3. Acting on the environment (output)
-4. Learning from its actions
+1. **Perceiving** the environment (inputs)
+2. **Reasoning & Planning** over perceived data
+3. **Acting** on the environment (outputs)
+4. **Learning** from outcomes
 
 <img src="01_agent-loop.png" alt="agent-loop" width="500" height="800">
 
-
 **Key Characteristics:**
 
-- **Autonomy**: Executes tasks independently
-- **Proactivity**: Sets and follows goals
-- **Memory**: Stores knowledge of past interactions
-- **Interactivity**: Responds intelligently to user or environment
-- **Adaptability**: Learns from failures and successes
+* **Autonomy**: Executes tasks independently
+* **Proactivity**: Pursues goals, not just reactions
+* **Memory**: Retains and recalls past interactions
+* **Interactivity**: Engages intelligently with users/environment
+* **Adaptability**: Improves from successes and failures
 
-**Example Agents:**
+**Examples:**
 
-- 🧑‍💼 Personal productivity agents (Notion AI, Rewind)
-- 🔍 Research assistants (AutoGPT, Devin)
-- 📊 Business automation bots (Zapier + AI, Salesforce agents)
+* 🧑‍💼 Personal productivity agents (Notion AI, Rewind)
+* 🔍 Research assistants (AutoGPT, Devin)
+* 📊 Business automation bots (Zapier + AI, Salesforce Agents)
 
 ---
 
@@ -54,33 +56,46 @@ An **AI agent** is a system that operates autonomously within a given environmen
 
 ### 1. **Perception Module**
 
-Processes external inputs such as:
+Handles external inputs such as:
 
-- Natural language (via LLMs)
-- API outputs
-- Sensor data
+* Natural language (via LLMs)
+* API responses
+* Sensor data
 
-### 2. **Reasoning and Planning**
+### 2. **Reasoning & Planning**
 
-- Chain-of-thought prompting
-- Task decomposition (e.g., via ReAct or Toolformer strategies)
-- Decision-making using logic or learned priors
+* Chain-of-thought prompting
+* Task decomposition (ReAct, Toolformer, etc.)
+* Decision-making with rules or priors
 
 ### 3. **Action Module**
 
-- Invokes tools or APIs (e.g., web search, file upload, data pipelines)
-- Executes scripts or modifies memory/state
+* Executes API calls, tools, scripts
+* Updates memory/state
 
 ### 4. **Memory System**
 
-- Short-term: dialogue history, task buffers
-- Long-term: vector stores (FAISS, ChromaDB), key-value storage
+* **Short-term**: dialogue, task buffers
+* **Long-term**: vector DBs (FAISS, Chroma), KV storage
 
 ### 5. **Feedback Loop**
 
-- Monitors success/failure
-- Logs task metrics and triggers learning or adjustment
-- May use Reinforcement Learning, heuristics, or human-in-the-loop corrections
+* Monitors success/failure
+* Logs metrics & adjusts behavior
+* May use RL, heuristics, or human corrections
+
+---
+
+## 🧵 Prompt Strategies
+
+Prompting guides how agents **reason, plan, and act**.
+
+<img src="03_prompt-and-tool-use.png" alt="agent-prompt-tool" width="500" height="800">
+
+* **ReAct**: Interleaves reasoning + acting steps
+* **Toolformer**: Dynamically predicts tool use
+* **Self-reflection loops**: Agent critiques & revises outputs
+* **Agent-prompt-tool**: Framework for chaining prompts with tools
 
 ---
 
@@ -88,88 +103,78 @@ Processes external inputs such as:
 
 ### 🧪 Frameworks
 
-Popular orchestration libraries:
+* **LangChain**: Memory, tool use, orchestration
+* **AutoGen**: Multi-agent collaboration
+* **CrewAI / MetaGPT**: Role-based task management
 
-- **LangChain**: Tool use, memory, chains, agents
-- **AutoGen**: Multi-agent dialog coordination
-- **CrewAI / MetaGPT**: Role-based task management
+### 🔧 Tools & APIs
 
-### 🔧 Tools and APIs
-
-- **Search**: SerpAPI, Tavily
-- **Web interaction**: Puppeteer, browser toolkits
-- **File processing**: Unstructured.io, LlamaParse
-- **APIs**: Zapier, Stripe, Twilio, Notion
-
-### 🧵 Prompt Strategies
-
-- **ReAct**: Reason + Act interleaving steps
-- **Toolformer**: Predicts when to call tools dynamically
-- **Self-reflection loops**: Agents critique and revise their actions
-
-<img src="03_prompt-and-tool-use.png" alt="agent-prompt-tool" width="500" height="800">
+* **Search**: SerpAPI, Tavily
+* **Web**: Puppeteer, browser automation
+* **File processing**: Unstructured.io, LlamaParse
+* **APIs**: Zapier, Stripe, Twilio, Notion
 
 ---
 
 ## 🎓 Training vs Orchestration
 
-Unlike end-to-end deep learning models, agents are built with modular, often pre-trained components.
+Agents are **modular** — built from pre-trained parts orchestrated into workflows.
 
-| Component         | Trained | Notes                           |
-|------------------|---------|---------------------------------|
-| LLM              | ✅       | GPT-4, Claude, Mistral          |
-| Tool Wrappers    | ❌       | APIs, shell commands            |
-| Memory Systems   | ❌       | FAISS, Redis, vector DBs        |
-| Planning Logic   | Partially | Learned or scripted behavior   |
-| Feedback Loops   | ✅/❌     | Some use RLHF, others use heuristics |
+| Component      | Trained | Notes                         |
+| -------------- | ------- | ----------------------------- |
+| LLM            | ✅       | GPT-4, Claude, Mistral        |
+| Tool Wrappers  | ❌       | APIs, shell commands          |
+| Memory Systems | ❌       | FAISS, Redis, vector DBs      |
+| Planning Logic | Partial | Scripted or learned           |
+| Feedback Loops | ✅/❌     | RLHF or heuristic adjustments |
 
 ---
 
-## 📊 Monitoring and Evaluation
+## 📊 Monitoring & Evaluation
 
-Evaluation is critical in open-ended environments.
+Evaluation is critical for open-ended tasks.
 
-### Key Metrics
+**Metrics:**
 
-- **Task completion rate**
-- **Execution time / latency**
-- **Tool usage efficiency**
-- **Hallucination / error rate**
-- **User feedback (NPS, scores)**
+* Task completion rate
+* Latency & efficiency
+* Tool usage quality
+* Error/hallucination rate
+* User satisfaction (NPS, scores)
 
-### Tools
+**Tools:**
 
-- **LangSmith**: Traces, spans, memory visualizations
-- **AgentOps**: Agent state monitoring, failover tracking
-- **Weights & Biases**: Logs, model comparisons, dashboards
-- **TensorBoard**: Model performance, metrics, and visualizations
+* **LangSmith**: Tracing, spans, memory insights
+* **AgentOps**: Agent state + failover monitoring
+* **Weights & Biases**: Logs, dashboards, experiments
+* **TensorBoard**: Model metrics & visualization
 
-#### Sample Dashboard
-
-<img src="05_agent_eval_dashboard.png" alt="agent-eval-dash" width="500" height="800">
+<img src="05_agent_eval_metrics.png" alt="agent-eval-metrics" width="500" height="800">
 
 ---
 
 ## 🔮 Future Directions
 
-- 🤝 Multi-agent collaboration (swarm AI)
-- 🧠 Personal memory layers for long-term learning
-- 🔐 Privacy-preserving agents (on-device + encrypted memory)
-- 📱 Agent marketplaces (plug-and-play taskbots)
-- ⚖️ Regulation and governance for autonomous AI
+* 🤝 Multi-agent collaboration (swarm AI)
+* 🧠 Persistent personal memory layers
+* 🔐 Privacy-preserving agents (on-device, encrypted)
+* 📱 Agent marketplaces (plug-and-play taskbots)
+* ⚖️ Governance & regulation of autonomy
 
 ---
 
 ## 📎 Conclusion
 
-AI agents are more than smart chat interfaces—they're autonomous systems with memory, planning, tools, and goals.
+AI agents are **more than chatbots** — they’re evolving into **autonomous systems with reasoning, memory, tools, and goals**.
 
-As frameworks improve and use cases evolve, understanding how to build, train, and evaluate agents becomes crucial for developers, businesses, and policymakers.
+As frameworks mature, learning how to **design, orchestrate, and evaluate** these agents is becoming a key skill for developers, businesses, and policymakers.
 
-> Want to try building your own? Explore LangChain, AutoGen, or CrewAI and start orchestrating intelligence.
+> Want to try building one? Start with **LangChain, AutoGen, or CrewAI** — and begin orchestrating intelligence.
 
 ---
 
-🌐 [GitHub Pages](https://JenLaur.github.io/ai-agents-guide/)  
-🧠 Created by Jennifer L. Sentiff  
+🌐 [GitHub Pages](https://JenLaur.github.io/ai-agents-guide/)
+🧠 Created by *Jennifer L. Sentiff*
 🛠️ Powered by GPT-4 + Custom Visuals
+
+---
