@@ -171,5 +171,5 @@ As frameworks improve and use cases evolve, understanding how to build, train, a
 ---
 
 🌐 [GitHub Pages](https://JenLaur.github.io/ai-agents-guide/)  
-🧠 Created by Jennifer L. Sentiff
+🧠 Created by Jennifer L. Sentiff  
 🛠️ Powered by GPT-4 + Custom Visuals
