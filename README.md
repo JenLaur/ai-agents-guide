@@ -173,8 +173,8 @@ As frameworks mature, learning how to **design, orchestrate, and evaluate** thes
 
 ---
 
-🌐 [GitHub Pages](https://JenLaur.github.io/ai-agents-guide/)
-🧠 Created by *Jennifer L. Sentiff*
-🛠️ Powered by GPT-4 + Custom Visuals
+🌐 [GitHub Pages](https://JenLaur.github.io/ai-agents-guide/)  
+🧠 Created by *Jennifer L. Sentiff*  
+🛠️ Powered by GPT-4 + Custom Visuals  
 
 ---
